@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 import "./Feedback-Styles";
 import Trigger from "./Trigger";
 
-class Feedback extends Component {
+export * from './Modal'
+export { Trigger }
+
+export class Feedback extends Component {
   render() {
     let { props } = this;
 
@@ -65,3 +68,4 @@ Feedback.defaultProps = {
 };
 
 export default Feedback;
+
